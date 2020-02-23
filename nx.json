@@ -1,0 +1,28 @@
+{
+  "npmScope": "mycdlibrary",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "cdlibrary": {
+      "tags": []
+    },
+    "cdlibrary-e2e": {
+      "tags": [],
+      "implicitDependencies": ["cdlibrary"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    }
+  }
+}
