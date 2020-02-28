@@ -1,0 +1,14 @@
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 10em;
+}
+
+.router-link-active {
+    color: #929292;
+}

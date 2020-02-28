@@ -1,0 +1,48 @@
+<div class="search-list">
+
+  <h1 class="search-title">Search CD to add ...</h1>
+
+  <div class="search-form">
+
+    <form>
+      <mat-form-field class="search-input">
+        <mat-label>CD searching</mat-label>
+        <input matInput placeholder="..title" [formControl]="searchCD">
+      </mat-form-field>
+    </form>
+
+    <div *ngIf="!loading">
+      <div class="search-results" *ngIf="myAlbum">
+        <ng-container *ngFor="let album of myAlbum">
+          <mat-card class="search-card">
+            <mat-card-header class="search-header">
+              <div mat-card-avatar
+                [ngStyle]="{'background-image': 'url('+ album.artist.picture + ')', 'background-size': 'cover'}"></div>
+              <mat-card-title>{{album.artist.name}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="{{album.cover_medium}}" alt="album photo">
+            <mat-card-content>
+              <p>
+                {{ album.title}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+        </ng-container>
+      </div>
+
+    </div>
+    <div class="spinner" *ngIf="loading">
+      <div class="svg-spinner">
+      <mat-progress-spinner
+        mode="indeterminate"
+        color="warm"
+        value=50>
+      </mat-progress-spinner>
+      <div>
+    </div>
+  </div>
+</div>

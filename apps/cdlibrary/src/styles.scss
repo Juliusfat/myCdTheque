@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+// primary font
+$primary_font: 'Vogue';
+$secondary_font: 'GROBOLD';
+$primary-text: white;
+$secondary-text: #929292;
+
+
+html,
+body {
+    height: 100%;
+    color: $primary_text;
+    background-color: $secondary_text;
+}
+
+* {
+    margin: 0;
+    font-family: $secondary_font !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+

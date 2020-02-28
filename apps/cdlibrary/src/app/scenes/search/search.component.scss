@@ -1,0 +1,62 @@
+.search-list {
+    background-color: #929292;
+    height: auto;
+    margin: 0;
+}
+
+.search-title {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.search-form {
+    width: 80%;
+    margin: auto;
+}
+
+.search-card {
+    width: 21em;
+    margin: 1em;
+    overflow: hidden;
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-header {
+    margin-bottom: 1em;
+}
+
+.svg-spinner {
+    height: 100px;
+    width: 100px;
+    margin: 33% auto;
+}
+.spinner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: white !important;
+}
+
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: white !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: white !important;
+    ;
+}
